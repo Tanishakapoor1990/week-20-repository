@@ -1,16 +1,18 @@
 
+ #!/usr/bin/env python 
+import sys
+import nltk
+from nltk.tokenize import word_tokenize
 
-    def word_count(data):
+#stdin = standard input
+for line in sys.stdin: 
+    
+    #strip white spaces at beginning and end of line
+    line = line.strip()
 
-        counts = dict()
-        words = str.split()
+    #split each line into words
+    #words = line.split()
+    words = word_tokenize(line)
 
     for word in words:
-        if word in counts:
-            counts[word] += 1
-        else:
-            counts[word] = 1
-
-    return counts
-
-word_count(data)
+        print(word + "\t1")

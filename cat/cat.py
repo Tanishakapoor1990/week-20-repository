@@ -1,1 +1,0 @@
-cats = open(‘cats_txt.txt’, ‘r’)
